@@ -3,31 +3,23 @@ use employees;
 INSERT INTO department
     (name)
 VALUES
-    ('Human Resources'),
-    ('Marketing'),
-    ('Information Technology'),
-    ('Accounting');
-use employees;
+    ('Engineering'),
+    ('Finance'),
+    ('Legal'),
+    ('Sales');
 
-INSERT INTO department
-    (name)
-VALUES
-    ('Human Resources'),
-    ('Marketing'),
-    ('Information Technology'),
-    ('Accounting');
 
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    ('HR Manager', 100000, 1),
-    ('HR', 50000, 1),
-    ('Marketing Director', 140000, 2),
-    ('Sales', 65000, 2),
-    ('IT Director', 195000, 3),
-    ('Desktop Support', 100000, 3),
-    ('Account Manager', 110000, 4),
-    ('Accountant', 90000, 4);
+   ('Sales Lead', 100000, 4),
+    ('Salesperson', 50000, 4),
+    ('Lead Engineer', 140000, 1),
+    ('Software Engineer', 65000, 2),
+    ('Account Manager', 195000, 2),
+    ('Accountant', 100000, 2),
+    ('Legal Team Lead', 110000, 3),
+    ('Lawyer', 90000, 3);
 
 INSERT INTO employee
     (first_name, last_name, role_id, manager_id)

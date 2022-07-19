@@ -5,7 +5,7 @@ class employeeDB {
     constructor(connection) {
         this.connection = connection;
     }
-
+   
     // Show all employees
     allEmployees() {
         return this.connection.promise().query(
